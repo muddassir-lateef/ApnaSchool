@@ -20,7 +20,7 @@ public class StudentMenuController {
     private Button genIdCardBtn;
 
     @FXML
-    private Button genStudentDocBtn;
+    private Button updateMarksBtn;
 
     @FXML
     private Button payFeeBtn;
@@ -47,7 +47,7 @@ public class StudentMenuController {
     }
 
     @FXML
-    void genStudentDocBtnPressed(ActionEvent event) {
+    void updateMarksBtnPressed(ActionEvent event) {
 
     }
 

@@ -9,6 +9,6 @@
       <Button fx:id="genIdCardBtn" layoutX="137.0" layoutY="275.0" mnemonicParsing="false" onAction="#genIdCardBtnPressed" text="Generate Id Card" />
       <Button fx:id="payFeeBtn" layoutX="137.0" layoutY="323.0" mnemonicParsing="false" onAction="#payFeeBtnPressed" text="Pay Fee" />
       <Button fx:id="admitStaffBtn" layoutX="137.0" layoutY="377.0" mnemonicParsing="false" onAction="#admitStaffBtnPressed" text="Admit Staff" />
-      <Button fx:id="genStudentDocBtn" layoutX="140.0" layoutY="421.0" mnemonicParsing="false" onAction="#genStudentDocBtnPressed" text="Generate Student Document" />
+      <Button fx:id="updateMarksBtn" layoutX="140.0" layoutY="421.0" mnemonicParsing="false" onAction="#updateMarksBtnPressed" text="Update Exam Marks" />
    </children>
 </AnchorPane>
