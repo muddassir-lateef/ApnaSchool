@@ -48,7 +48,7 @@ public class StudentMenuController {
 
     @FXML
     void updateMarksBtnPressed(ActionEvent event) {
-
+        loadParentUI("UpdateMarks/UpdateMarks.fxml");
     }
 
     @FXML
