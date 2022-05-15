@@ -5,6 +5,7 @@ package Controllers;
         import Entities.Fee;
         import Entities.FeeRecord;
         import Entities.Student;
+        import javafx.event.ActionEvent;
         import javafx.fxml.FXML;
         import javafx.scene.control.Button;
         import javafx.scene.control.TextField;
@@ -16,7 +17,8 @@ package Controllers;
 
         import java.util.ArrayList;
         import java.util.List;
-
+        import java.text.SimpleDateFormat;
+        import java.util.Date;
 public class FeePaymentMenuController {
 
     @FXML
@@ -55,5 +57,29 @@ public class FeePaymentMenuController {
         trans.commit();
         //---//
     }
+
+    @FXML
+    void payBtnClicked(ActionEvent event) {
+        Configuration con = new Configuration();
+        con.configure().addAnnotatedClass(FeeRecord.class);
+
+        SessionFactory sf= con.buildSessionFactory();
+        Session session= sf.openSession();
+        Transaction trans= session.beginTransaction();
+        int Amount = Integer.valueOf(feePaymentAmount.getText());
+        int stuID = Integer.valueOf(studentIdField.getText());
+        Student stu = (Student)session.createQuery("FROM Student where Student.id = :temp").setParameter("temp", stuID).uniqueResult();
+        FeeRecord tempRecord = new FeeRecord();
+        tempRecord.setPaidAmount(Amount);
+        SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+        Date date = new Date();
+        tempRecord.setPaidDate(date);
+        stu.setFeeRecord(tempRecord);
+        session.save(stu);
+        session.save(tempRecord);
+        trans.commit();
+        session.close();
     }
+
+}
 
