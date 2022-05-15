@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="700.0" prefWidth="780.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.SubmitFeedbackController">
+   <children>
+      <ImageView fitHeight="700.0" fitWidth="780.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@background.png" />
+         </image>
+      </ImageView>
+      <ComboBox fx:id="examsDropdown" layoutX="189.0" layoutY="199.0" prefHeight="25.0" prefWidth="199.0" promptText="Exams" />
+      <Button fx:id="selectExamBtn" layoutX="508.0" layoutY="199.0" mnemonicParsing="false" onAction="#selectExamClicked" text=" Select Exam" />
+      <TextArea fx:id="statementArea" layoutX="189.0" layoutY="246.0" prefHeight="111.0" prefWidth="402.0" promptText="Feedback" />
+      <Button fx:id="submitBtn" layoutX="309.0" layoutY="393.0" mnemonicParsing="false" onAction="#submitBtnClicked" prefHeight="25.0" prefWidth="206.0" text="Submit" />
+   </children>
+</AnchorPane>
