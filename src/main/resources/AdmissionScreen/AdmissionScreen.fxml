@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="anchorpane" stylesheets="@../centerPane.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.AdmissionScreenController">
+   <children>
+      <Button fx:id="TestButton" layoutX="549.0" layoutY="487.0" mnemonicParsing="false" onMouseClicked="#OnTestButtonClicked" text="Admit Student" />
+      <TextField fx:id="studentName" layoutX="304.0" layoutY="220.0" promptText="Student Name" />
+      <TextField fx:id="guardianName" layoutX="304.0" layoutY="252.0" promptText="Guardian Name" />
+      <TextField fx:id="studentCNIC" layoutX="304.0" layoutY="286.0" promptText="Student CNIC" />
+      <TextField fx:id="studentAge" layoutX="304.0" layoutY="319.0" promptText="Student Age" />
+      <TextField fx:id="studentAddress" layoutX="304.0" layoutY="355.0" promptText="Student Address" />
+      <TextField fx:id="studentClass" layoutX="304.0" layoutY="390.0" promptText="Student Class" />
+      <TextField fx:id="studentScholarship" layoutX="304.0" layoutY="424.0" promptText="Student Scholarship" />
+      <TextField fx:id="studentPhoneNumber" layoutX="304.0" layoutY="461.0" promptText="Phone Number" />
+      <Text fx:id="topText" layoutX="304.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" text="STUDENT ADMISSION FORM" />
+   </children>
+</AnchorPane>

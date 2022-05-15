@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.FeePaymentMenuController">
+   <children>
+      <Button fx:id="payBtn" layoutX="274.0" layoutY="284.0" mnemonicParsing="false" onMouseClicked="#PayButtonClicked" text="Button" />
+      <TextField fx:id="feePaymentAmount" layoutX="226.0" layoutY="141.0" promptText="Amount to be Paid" />
+      <TextField fx:id="studentIdField" layoutX="226.0" layoutY="188.0" promptText="Student ID" />
+   </children>
+</AnchorPane>
