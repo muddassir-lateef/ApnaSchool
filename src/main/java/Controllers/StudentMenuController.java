@@ -25,9 +25,16 @@ public class StudentMenuController {
     @FXML
     private Button payFeeBtn;
 
-    @FXML
-    private Button setScholarshipBtn;
 
+
+    @FXML
+    private Button admitStaffBtn;
+
+
+    @FXML
+    void admitStaffBtnPressed(ActionEvent event) {
+        loadParentUI("RegisterStaff/RegisterStaff.fxml");
+    }
     @FXML
     void admitStudentBtnPressed(ActionEvent event) {
         loadParentUI("AdmissionScreen/AdmissionScreen.fxml");
@@ -50,10 +57,7 @@ public class StudentMenuController {
 
     }
 
-    @FXML
-    void setScholarshipBtnPressed(ActionEvent event) {
 
-    }
     private void loadParentUI(String path){
         //loads the UI in the center pane i.e. the AnchorPane of the current controller
         Parent root = null;
