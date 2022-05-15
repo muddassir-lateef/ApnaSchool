@@ -25,11 +25,11 @@ public class Main extends Application {
     public void start(Stage stage) throws Exception {
 
         //  FXMLLoader fxmlLoader = new FXMLLoader(Utilities.Launcher.Main.class.getResource("LoginScreen/login.fxml"));
-        URL url=getClass().getClassLoader().getResource("Main Menu/MainMenu.fxml");
+        URL url=getClass().getClassLoader().getResource("LoginScreen/login.fxml");
         Parent root = FXMLLoader.load(url);
         stage.initStyle(StageStyle.TRANSPARENT);
       //  root.setStyle("-fx-background-radius: 6;" );
-        stage.setTitle("Examination System");
+        stage.setTitle("Apna School");
         //  stage.initStyle(StageStyle.UNDECORATED);
 
 
