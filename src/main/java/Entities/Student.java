@@ -120,6 +120,7 @@ public class Student
     @JoinColumn(name = "studentID")
     private List<FeeRecord> feeRecord;
 
+
     public Student()
     {
         feeRecord = new ArrayList<FeeRecord>();
