@@ -30,7 +30,10 @@ public class StudentMenuController {
     @FXML
     private Button admitStaffBtn;
 
-
+    @FXML
+    void viewResultsBtnPressed(ActionEvent event) {
+        loadParentUI("ViewResults/ViewResults.fxml");
+    }
     @FXML
     void admitStaffBtnPressed(ActionEvent event) {
         loadParentUI("RegisterStaff/RegisterStaff.fxml");

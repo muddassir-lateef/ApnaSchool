@@ -10,5 +10,6 @@
       <Button fx:id="payFeeBtn" layoutX="137.0" layoutY="323.0" mnemonicParsing="false" onAction="#payFeeBtnPressed" text="Pay Fee" />
       <Button fx:id="admitStaffBtn" layoutX="137.0" layoutY="377.0" mnemonicParsing="false" onAction="#admitStaffBtnPressed" text="Admit Staff" />
       <Button fx:id="updateMarksBtn" layoutX="140.0" layoutY="421.0" mnemonicParsing="false" onAction="#updateMarksBtnPressed" text="Update Exam Marks" />
+      <Button fx:id="viewResultsBtn" layoutX="133.0" layoutY="463.0" mnemonicParsing="false" onAction="#viewResultsBtnPressed" text="View Results" />
    </children>
 </AnchorPane>

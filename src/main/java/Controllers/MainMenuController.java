@@ -32,6 +32,7 @@ public class MainMenuController {
 
     }
 
+
     @FXML
     void studentMenuBtnPressed(ActionEvent event) {
         Singleton singleton=Singleton.getInstance();
