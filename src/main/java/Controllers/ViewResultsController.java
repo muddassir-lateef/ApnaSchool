@@ -34,6 +34,7 @@ public class ViewResultsController {
 
     @FXML
     private ListView<String> subjectList;
+
     public void initialize() {
         Configuration con = new Configuration();
         con.configure().addAnnotatedClass(ExamMarks.class);

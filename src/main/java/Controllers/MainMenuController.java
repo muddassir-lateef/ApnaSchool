@@ -29,9 +29,14 @@ public class MainMenuController {
 
     @FXML
     void HomeBtnPressed(ActionEvent event) {
+        loadUI("Home/Home.fxml");
 
     }
+    public void initialize() {
 
+
+        loadUI("Home/Home.fxml");
+    }
 
     @FXML
     void studentMenuBtnPressed(ActionEvent event) {
