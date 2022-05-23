@@ -22,8 +22,7 @@ public class RegisterStaffController {
     @FXML
     private TextField namefield;
 
-    @FXML
-    private Text promptField1;
+
     @FXML
     private Text promptField;
 

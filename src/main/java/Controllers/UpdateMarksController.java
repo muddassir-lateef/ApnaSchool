@@ -29,11 +29,9 @@ public class UpdateMarksController {
     @FXML
     private Text promptField;
 
-    @FXML
-    private Text promptField1;
 
     @FXML
-    private PasswordField subjectfield;
+    private TextField subjectfield;
 
     @FXML
     private Button updatebtn;
