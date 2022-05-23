@@ -3,11 +3,13 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.FeePaymentMenuController">
    <children>
-      <Button fx:id="payBtn" layoutX="275.0" layoutY="247.0" mnemonicParsing="false" onMouseClicked="#payBtnClicked" text="Pay" />
+      <Button fx:id="payBtn" layoutX="226.0" layoutY="247.0" mnemonicParsing="false" onMouseClicked="#payBtnClicked" prefHeight="25.0" prefWidth="149.0" text="Pay" />
       <TextField fx:id="feePaymentAmount" layoutX="226.0" layoutY="141.0" promptText="Amount to be Paid" />
       <TextField fx:id="studentIdField" layoutX="226.0" layoutY="188.0" promptText="Student ID" />
+      <Text fx:id="payAlert" layoutX="226.0" layoutY="230.0" strokeType="OUTSIDE" strokeWidth="0.0" text="text" visible="false" wrappingWidth="149.0" />
    </children>
 </AnchorPane>
