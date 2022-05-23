@@ -1,16 +1,16 @@
 .button {
-    -fx-background-color: #989aad;
+    -fx-background-color: #38B6FF;
     -fx-graphic: url("home.png");
 }
 
 .button:hover {
-    -fx-background-color: #bec4dc;
+    -fx-background-color: #5294FF;
     -fx-graphic: url("homeAnimated.gif");
 
 }
 
 .button:pressed{
-    -fx-background-color: #bec4dc;
+    -fx-background-color: #5294FF;
     -fx-opacity: 0.8;
 
 }

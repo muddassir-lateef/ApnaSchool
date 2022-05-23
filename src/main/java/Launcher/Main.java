@@ -27,6 +27,7 @@ public class Main extends Application {
         //  FXMLLoader fxmlLoader = new FXMLLoader(Utilities.Launcher.Main.class.getResource("LoginScreen/login.fxml"));
         URL url=getClass().getClassLoader().getResource("LoginScreen/login.fxml");
         Parent root = FXMLLoader.load(url);
+        root.setStyle("-fx-background-radius: 6;-fx-background-color: rgb(256, 256, 256), rgb(256, 256, 256);" );
         stage.initStyle(StageStyle.TRANSPARENT);
       //  root.setStyle("-fx-background-radius: 6;" );
         stage.setTitle("Apna School");
@@ -62,7 +63,7 @@ public class Main extends Application {
             URL url= Main.class.getClassLoader().getResource(path);
             Parent root = FXMLLoader.load(url);
             //stage.initStyle(StageStyle.TRANSPARENT);
-            //root.setStyle("-fx-background-radius: 6;-fx-background-color: rgb(256, 256, 256), rgb(256, 256, 256);" );
+            root.setStyle("-fx-background-radius: 6;-fx-background-color: rgb(256, 256, 256), rgb(256, 256, 256);" );
             stage.setTitle("Examination System");
             root.setOnMousePressed(new EventHandler<MouseEvent>() {
                 @Override

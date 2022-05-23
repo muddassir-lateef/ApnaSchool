@@ -14,7 +14,7 @@
    <left>
       <AnchorPane prefHeight="500.0" prefWidth="300.0" BorderPane.alignment="CENTER">
          <children>
-            <ImageView fitHeight="114.0" fitWidth="112.0" layoutX="32.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="256.0" fitWidth="285.0" layoutX="22.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@Logo.png" />
                </image>
@@ -24,7 +24,7 @@
                   <Image url="@Password.png" />
                </image>
             </ImageView>
-            <Button fx:id="loginBtn" layoutX="96.0" layoutY="343.0" mnemonicParsing="false" onAction="#LoginBtnClicked" prefHeight="17.0" prefWidth="108.0" style="-fx-background-color: rgb(85, 104, 232); -fx-background-radius: 15px;" text="Login" textFill="WHITE">
+            <Button fx:id="loginBtn" layoutX="96.0" layoutY="343.0" mnemonicParsing="false" onAction="#LoginBtnClicked" prefHeight="17.0" prefWidth="108.0" style="-fx-background-color: rgb(56, 182, 255); -fx-background-radius: 15px;" text="Login" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font></Button>
@@ -34,12 +34,12 @@
                <font>
                   <Font name="HP Simplified Hans Light" size="15.0" />
                </font></Text>
-            <Text fill="#656060" layoutX="151.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ace" wrappingWidth="148.13671875">
+            <Text fill="#656060" layoutX="151.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="148.13671875">
                <font>
                   <Font name="HP Simplified Hans Light" size="44.0" />
                </font>
             </Text>
-            <Text layoutX="225.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="It">
+            <Text layoutX="225.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0">
                <font>
                   <Font name="HP Simplified Hans Regular" size="44.0" />
                </font>
@@ -54,7 +54,7 @@
                   <Font size="14.0" />
                </font>
             </Text>
-            <Button fx:id="closeBtn" layoutX="77.0" layoutY="402.0" mnemonicParsing="false" onAction="#CloseBtnClicked" prefHeight="30.0" prefWidth="147.0" style="-fx-background-color: #2CD7DE; -fx-background-radius: 15px;" text="Close" textFill="WHITE">
+            <Button fx:id="closeBtn" layoutX="95.0" layoutY="401.0" mnemonicParsing="false" onAction="#CloseBtnClicked" prefHeight="30.0" prefWidth="113.0" style="-fx-background-color: rgb(56, 182, 255); -fx-background-radius: 15px;" text="Close" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
